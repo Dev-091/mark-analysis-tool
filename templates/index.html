@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Dashboard</title></head>
+<body>
+    <h1>Student Result Data</h1>
+    {% for table in tables %}
+        {{ table|safe }}
+    {% endfor %}
+    <a href="/statistics">Statistics</a> |
+    <a href="/analytics">Analytics</a> |
+    <a href="/plot/line/average">Line Plot</a>
+</body>
+</html>

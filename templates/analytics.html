@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Analytics</title></head>
+<body>
+    <h1>Analytics Summary</h1>
+    <ul>
+    {% for k, v in data.items() %}
+        <li><strong>{{ k }}:</strong> {{ v }}</li>
+    {% endfor %}
+    </ul>
+    <a href="/">Back</a>
+</body>
+</html>

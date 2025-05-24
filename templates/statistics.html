@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Statistics</title></head>
+<body>
+    <h1>Statistics</h1>
+    {% for k, v in stats.items() %}
+        <h3>{{ k }}</h3>
+        {% if v is string %}
+            {{ v|safe }}
+        {% else %}
+            <p>{{ v }}</p>
+        {% endif %}
+    {% endfor %}
+    <a href="/">Back</a>
+</body>
+</html>
